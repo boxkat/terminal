@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "Uncut Sans";
+    src: url("fonts/UncutSans-Variable.woff2") format("woff2-variations");
+}
+
+@font-face {
+    font-family: "Geist Mono";
+    src: url("fonts/GeistMono-Variable.ttf") format("woff2-variations");
+}
+
+:root {
+    --col-red: #ff5555;
+    --col-green: #55ff55;
+    --col-blue: #5555ff;
+    --col-yellow: #ffff55;
+    --col-pink: #ff55ff;
+    --col-white: #faf1f1;
+    --col-black: #1a1a1a;
+    --bg-col: var(--col-white);
+    --body-col: var(--col-black);
+}
+
+body {
+    font-family: "Uncut Sans", sans-serif;
+    color: var(--body-col);
+    background-color: var(--bg-col);
+    margin-top: 100px;
+    line-height: 1.4em;
+}
+
+h1, h2, h3 {
+    font-family: "Geist Mono", monospace;
+    letter-spacing: -0.5px;
+    margin: 10px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+a {
+    color: var(--col-blue);
+    text-decoration: none;
+}
+
+#main {
+    width: min(90vw, 800px);
+    margin: 0 auto;
+}
+
+#head {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 10vh;
+    margin: 0 auto;
+}
+
+#title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bk-logo {
+    background-color: var(--body-col);
+    mask: url("https://boxkat.github.io/assets/img/boxkat.svg");
+    mask-size: cover;
+    height: 16px;
+    width: 16px;
+}
+
+#title-wrapper .bk-logo {
+    min-height: 32px;
+    min-width: 32px;
+    margin-right: 10px;
+}
